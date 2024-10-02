@@ -1,0 +1,6 @@
+sprint:
+  application:
+    name: validations
+
+server:
+  port: 8999

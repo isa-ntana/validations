@@ -1,8 +1,9 @@
-package com.br.zup.validateions.controllers;
+package com.br.zup.validations.controllers;
 
-import com.br.zup.validateions.controllers.dtos.UserDTO;
-import com.br.zup.validateions.controllers.dtos.UserRegisterDTO;
-import com.br.zup.validateions.services.UserService;
+import com.br.zup.validations.controllers.dtos.UserDTO;
+import com.br.zup.validations.controllers.dtos.UserRegisterDTO;
+import com.br.zup.validations.services.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,7 @@ public class UserController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public UserDTO registerUser(@RequestBody UserRegisterDTO user){
+    public UserDTO registerUser(@Valid @RequestBody UserRegisterDTO user){
         return userService.save(user);
     }
 }

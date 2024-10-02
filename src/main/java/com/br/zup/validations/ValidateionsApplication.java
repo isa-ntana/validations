@@ -1,4 +1,4 @@
-package com.br.zup.validateions;
+package com.br.zup.validations;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

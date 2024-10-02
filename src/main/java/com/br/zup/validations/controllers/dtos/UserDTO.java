@@ -1,4 +1,4 @@
-package com.br.zup.validateions.controllers.dtos;
+package com.br.zup.validations.controllers.dtos;
 
 import java.util.UUID;
 

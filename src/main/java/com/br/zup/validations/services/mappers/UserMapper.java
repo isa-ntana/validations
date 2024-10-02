@@ -1,7 +1,8 @@
-package com.br.zup.validateions.services.mappers;
+package com.br.zup.validations.services.mappers;
 
-import com.br.zup.validateions.controllers.dtos.UserDTO;
-import com.br.zup.validateions.controllers.dtos.UserRegisterDTO;
+import com.br.zup.validations.controllers.dtos.UserDTO;
+import com.br.zup.validations.controllers.dtos.UserRegisterDTO;
+import jakarta.validation.Valid;
 
 public class UserMapper {
 
